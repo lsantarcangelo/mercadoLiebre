@@ -1,0 +1,82 @@
+:root {
+    --yellow: #EAC926;
+    --dark-blue: #03264C;
+    --light-blue: #1259c3;
+    --gray: #666666;
+    --light-gray: #ebebeb;
+    --green: #39b54a;
+    --base-font-family: 'Roboto', sans-serif
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 12px;
+}
+
+/* ul {
+    font-size: 12px;
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+} */
+
+header {
+    background-color: var(--yellow);
+}
+
+header ul li{
+    list-style-type: none;
+    font-size: 12px;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+.precios {
+    font-size: 18px;
+}
+
+.descuentos, .descripciones {
+    font-size: 16px;
+}
+
+.ultimaVisita h3, .ofertas h3 {
+    font-size: 24px;
+}
+
+.leyendaCuotas {
+    display: inline;
+}
+
+footer section {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+div.burger-menu {
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+div.burger-menu i {
+    color: var(--light-gray);
+    background-color: var(--light-blue);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
