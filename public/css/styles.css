@@ -31,23 +31,27 @@ header {
     background-color: var(--yellow);
 }
 
-header ul li{
-    list-style-type: none;
-    font-size: 12px;
+header .logo {
+    width: 35vw;
 }
 
-header ul li a{
-    text-decoration: none;
-    color: #000;
+.navBar {
+    display: none;
 }
 
-.ofertas {
+.banner img {
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+
+.ofertas, .ultimaVisita {
     background-color: #ebebeb;
+    padding-bottom: 5px;
 }
 
 article {
-    margin: 0px auto 10px;
-
+    margin: 0px auto 20px;
     width: 90%;
 }
 
@@ -60,6 +64,11 @@ article img {
 .detalleProducto {
     border-top: solid 1px #ebebeb;
     padding: 15px;
+    background-color: white;
+}
+
+.detalleProducto i {
+    color: var(--green);
 }
 
 .precios {
@@ -70,8 +79,13 @@ article img {
     display: none;
 }
 
+.descuentos {
+    color: var(--green);
+}
+
 .descuentos, .descripciones {
     font-size: 16px;
+    font-weight: 600;
 }
 
 .ultimaVisita h3, .ofertas h3 {
@@ -108,11 +122,45 @@ div.burger-menu i {
 
 /* Media Query para Tablet */
 @media (min-width: 361px) {
-
+    .navBar {
+        display: block;
+    }
+    .burger-menu {
+        display: none;
+    }
+    header ul li{
+        list-style-type: none;
+        font-size: 12px;
+    }
+    
+    header ul li a{
+        text-decoration: none;
+        color: #000;
+    }
+    .descripciones {
+        display: block;
+    }
 }
 
 
 /* Media Query para Desktop */
 @media (min-width: 769px) {
-
+    .navBar {
+        display: block;
+    }
+    .burger-menu {
+        display: none;
+    }
+    header ul li{
+        list-style-type: none;
+        font-size: 12px;
+    }
+    
+    header ul li a{
+        text-decoration: none;
+        color: #000;
+    }
+    .descripciones {
+        display: block;
+    }
 }
