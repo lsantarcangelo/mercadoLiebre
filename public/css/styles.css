@@ -19,8 +19,7 @@ body {
 }
 
 main {
-    margin: 0px auto;
-    width: 90vw;
+    margin: 0 auto;
 }
 
 p {
@@ -31,16 +30,31 @@ header {
     background-color: var(--yellow);
 }
 
-/* header .logo {
-    width: 35vw;
-} */
-
 .navBar {
+    display: none;
+}
+
+.topHeader {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.logo {
+    width: 50%;
+}
+
+.searchBar {
+    width: 50%;
+}
+
+.searchBar .submit {
     display: none;
 }
 
 .leyendaCompra {
     margin: auto;
+    align-self: flex-end;
 } 
 
 .banner img {
@@ -52,19 +66,21 @@ header {
     padding-bottom: 5px;
 }
 
-article {
-    margin: 0px auto 20px;
-    width: 90%;
+.productos {
+    padding: 10px;
 }
 
-article img {
-    object-fit: cover;
+article {
+    margin: 0px auto 20px;
+    width: 80%;
+}
+
+.product_img {
     width:100%;
-    height:100%;
 }
 
 .detalleProducto {
-    border-top: solid 0.5px #ebebeb;
+    border-top: solid 1px #ebebeb;
     padding: 15px;
     background-color: white;
     display: flex;
@@ -107,7 +123,11 @@ article img {
 }
 
 .ultimaVisita h3, .ofertas h3 {
-    font-size: 24px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--gray);
+    padding-top: 2%;
+    padding-left: 5%;
 }
 
 .leyendaCuotas {
@@ -141,7 +161,7 @@ div.burger-menu i {
 /* Media Query para Tablet */
 @media (min-width: 361px) {
     
-    .contieneLogo {
+    .topHeader {
         padding: 10px;
         display: flex;
         justify-content: space-evenly;
@@ -182,6 +202,10 @@ div.burger-menu i {
         color: #000;
     }
 
+    .ultimaVisita h3, .ofertas h3 {
+        font-size: 1.2rem;
+    }
+
     .productos {
         display: flex;
         flex-wrap: wrap;
@@ -191,12 +215,30 @@ div.burger-menu i {
         box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
         -webkit-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
         -moz-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
-        width: 45%;
+        width: 40%;
+    }
+
+    .detalleProducto {
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    .detalleProducto i {
+        position: absolute;
+        right: 10px;
+        top: -15px;
+    }
+
+    .precios {
+        font-weight: bold;
     }
 
     .descripciones {
         display: block;
+        margin-top: 5px;
+        color: var(--gray);
     }
+
 }
 
 
