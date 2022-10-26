@@ -1,0 +1,29 @@
+:root {
+    --yellow: #EAC926;
+    --dark-blue: #03264C;
+    --light-blue: #1259c3;
+    --gray: #666666;
+    --light-gray: #ebebeb;
+    --green: #39b54a;
+    --base-font-family: 'Roboto', sans-serif
+}
+
+.form-container {
+    border: solid 1px black;
+    padding: 20px 5px;
+    background-color: var(--light-gray);
+    display: block;
+}
+
+.form-container p {
+    font-weight: bold;
+}
+
+.form-group {
+    padding-left: 35px;
+    margin-bottom: 12px;
+}
+
+.form-button {
+    padding-left: 35px
+}
