@@ -30,7 +30,9 @@
     <header>
         <div class="topHeader">
             <div class="logo">
-                <img src="/images/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre">
+                <a href="/">
+                    <img src="/images/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre">
+                </a>
             </div>
             <div class="searchBar">
                 <input type="text" placeholder="Buscar...">
@@ -47,8 +49,8 @@
                 <li><a href="">Ayuda</a></li>
             </ul>
             <ul class="navBarRight">
-                <li><a href="">Crea tu Cuenta</a> <i class="far fa-id-card"></i></li>
-                <li><a href="">Ingresa</a> <i class="fas fa-sign-in-alt"></i></li>
+                <li><a href="register.html">Crea tu Cuenta</a> <i class="far fa-id-card"></i></li>
+                <li><a href="login.html">Ingresa</a> <i class="fas fa-sign-in-alt"></i></li>
                 <li><a href="">Mis Compras</a> <i class="fas fa-shopping-basket"></i></li>
             </ul>
         </nav>
@@ -61,7 +63,7 @@
     </section>
 
     <main class="form-container">
-        <form action="#" method="POST">
+        <form action="#" method="GET">
             <div class="form-group">
                 <label for="nombre">Nombre y Apellido</label>
                 <input type="text" name="nombre" id="nombre">
@@ -82,27 +84,27 @@
                 <label for="domicilio">Domicilio</label>
                 <input type="text" name="domicilio" id="domicilio">
             </div>
-            <div class="form-group">
+            <div class="form-radio">
                 <p>Perfil del Usuario</p>
                 <input type="radio" name="comprador" value="comprador">
                 <label for="comprador">Comprador</label>
                 <input type="radio" name="vendedor" value="vendedor">
                 <label for="vendedor">Vendedor</label>
             </div>
-            <div class="form-intereses">
+            <div class="form-checkbox">
                 <p>Intereses</p>
-                <label for="electro"><input type="checkbox" name="electro" value="electro">Electro</label>
-                <label for="moda"><input type="checkbox" name="moda" value="moda">Moda</label>
-                <label for="hogar"><input type="checkbox" name="hogar" value="hogar">Hogar</label>
-                <label for="jugueteria"><input type="checkbox" name="jugueteria" value="jugueteria">Jugueteria</label>              
-                <label for="vida-sana"><input type="checkbox" name="vida-sana" value="vida-sana">Vida Sana</label>
+                <label for="electro"><input type="checkbox" name="electro" value="electro"> Electro</label>
+                <label for="moda"><input type="checkbox" name="moda" value="moda"> Moda</label>
+                <label for="hogar"><input type="checkbox" name="hogar" value="hogar"> Hogar</label>
+                <label for="jugueteria"><input type="checkbox" name="jugueteria" value="jugueteria"> Jugueteria</label>              
+                <label for="vida-sana"><input type="checkbox" name="vida-sana" value="vida-sana"> Vida Sana</label>
             </div>
             <div class="form-group">
                 <label for="password">Ingrese una contrasena</label>
                 <input type="password" name="password" id="password">
             </div>
             <div class="form-group">
-                <label for="confirm-password">Confirmar contrasena</label>
+                <label for="confirm-password">Confirme su contrasena</label>
                 <input type="password" name="confirm-password" id="confirm-password">
             </div>
             <div class="form-button">

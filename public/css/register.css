@@ -18,22 +18,36 @@
 
 .form-container p {
     font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-container label {
+    font-size: 12px;
 }
 
 .form-group {
-    margin: 12px auto;
+    margin: 15px auto;
     width: 75%;
+}
+
+.form-group input {
+    width: 100%;
+}
+
+.form-checkbox {
+    width: 75%;
+    margin: 15px auto;
+	display: flex;
+    flex-direction: column;
+}
+
+.form-radio {
+    width: 75%;
+    margin: 15px auto;
 }
 
 .form-button {
     padding-left: 35px;
     width: 75%;
     margin: 0 auto;
-}
-
-.form-intereses {
-	width: 75%;
-    margin: 12px auto;
-	display: flex;
-    flex-direction: column;
 }

@@ -30,7 +30,9 @@
     <header>
         <div class="topHeader">
             <div class="logo">
-                <img src="/images/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre">
+                <a href="/">
+                    <img src="/images/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre">
+                </a>
             </div>
             <div class="searchBar">
                 <input type="text" placeholder="Buscar...">
@@ -47,8 +49,8 @@
                 <li><a href="">Ayuda</a></li>
             </ul>
             <ul class="navBarRight">
-                <li><a href="">Crea tu Cuenta</a> <i class="far fa-id-card"></i></li>
-                <li><a href="">Ingresa</a> <i class="fas fa-sign-in-alt"></i></li>
+                <li><a href="register.html">Crea tu Cuenta</a> <i class="far fa-id-card"></i></li>
+                <li><a href="login.html">Ingresa</a> <i class="fas fa-sign-in-alt"></i></li>
                 <li><a href="">Mis Compras</a> <i class="fas fa-shopping-basket"></i></li>
             </ul>
         </nav>
@@ -63,10 +65,6 @@
     <main class="form-container">
         <form action="#" method="POST">
             <div class="form-group">
-                <label for="nombre">Nombre y Apellido</label>
-                <input type="text" name="nombre" id="nombre">
-            </div>
-            <div class="form-group">
                 <label for="usuario">Usuario</label>
                 <input type="text" name="usuario" id="usuario">
             </div>
@@ -75,7 +73,7 @@
                 <input type="password" name="password" id="password">
             </div>
             <div class="form-button">
-                <button type="submit">Ingresar</button>
+                <button type="submit">Enviar</button>
             </div>
         </form>
     </main>

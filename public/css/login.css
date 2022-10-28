@@ -18,22 +18,30 @@
 
 .form-container p {
     font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-container label {
+    font-size: 12px;
 }
 
 .form-group {
-    margin: 12px auto;
-    width: 75%;
+    margin: 15px auto;
+    width: 55%;
+}
+
+.form-group input {
+    width: 100%;
 }
 
 .form-button {
-    padding-left: 35px;
-    width: 75%;
-    margin: 0 auto;
+    width: 55%;
+    margin: 15px auto;
 }
 
-.form-intereses {
-	width: 75%;
-    margin: 12px auto;
-	display: flex;
-    flex-direction: column;
+.form-button button {
+    margin-top: 20px;
+    width: 100%;
+    color: var(--light-gray);
+    background-color: var(--light-blue);
 }
