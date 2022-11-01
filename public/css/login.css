@@ -7,7 +7,7 @@
     --green: #39b54a;
     --base-font-family: 'Roboto', sans-serif
 }
-
+/* Estilos Mobile */
 .form-container {
     margin: 0 auto;
     padding: 20px 5px;
@@ -42,6 +42,17 @@
 .form-button button {
     margin-top: 20px;
     width: 100%;
+}
+
+.form-button button:hover {
+    background-color: #0022AA;
     color: var(--light-gray);
-    background-color: var(--light-blue);
+}
+/* Finaliza Mobile */
+
+/* Media Query para Tablet */
+@media (min-width: 361px) {
+    .form-container {
+        width: 75%;
+    }
 }

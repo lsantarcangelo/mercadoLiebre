@@ -7,7 +7,7 @@
     --green: #39b54a;
     --base-font-family: 'Roboto', sans-serif
 }
-
+/* Estilos Mobile */
 * {
     margin: 0px;
     padding: 0px;
@@ -44,10 +44,16 @@ header {
 
 .logo {
     width: 50%;
+    padding: 10px;
 }
 
 .search-bar {
     width: 50%;
+    padding: 10px;
+}
+
+.search-bar input {
+    width: 100%;
 }
 
 .search-bar .submit {
@@ -63,6 +69,20 @@ header {
     width:100%;
 }
 
+div.burger-menu {
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 15px;
+}
+
+div.burger-menu i {
+    color: var(--light-gray);
+    background-color: var(--light-blue);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
 .ofertas, .last-visit {
     background-color: #ebebeb;
     padding-bottom: 5px;
@@ -74,8 +94,9 @@ header {
 
 main section article{
     background-color: #fff;    
-    margin: 0px auto 20px;
     width: 100%;
+    margin: 0px auto 20px;
+    padding-top: 10px;
 }
 
 .product_img {
@@ -139,30 +160,17 @@ main section article{
     display: inline;
 }
 
-div.burger-menu {
-    text-align: center;
-    padding-bottom: 12px;
-}
-
-div.burger-menu i {
-    color: var(--light-gray);
-    background-color: var(--light-blue);
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 18px;
-}
-
 /* Footer */
-.footer-icons {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
+.footer-cards {
+    margin-bottom: 15px;
 }
 
-footer section {
-    width: 30%;
+.footer-cards p {
     margin-bottom: 10px;
-    padding: 1.5em;
+    padding: 5px 15px;
+}
+
+.footer-icons {
     text-align: center;
 }
 
@@ -170,6 +178,15 @@ footer section i {
     font-size: 2em;
     padding-bottom: 5px;
     color: var(--light-blue);
+}
+
+footer section h4 {
+    text-align: center;
+}
+
+footer section p {
+    text-align: center;
+    margin-bottom: 15px;
 }
 /* Termina Mobile */
 
@@ -185,17 +202,22 @@ footer section i {
     }
 
     .logo {
-        width: 40%;
+        width: 33%;
     }
 
     .search-bar {
-        width: 40%;
+        width: 33%;
+    }
+
+    .purchase-text {
+        width: 33%;
     }
     
     .nav-bar {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-bottom: 15px;
     }
 
     .nav-bar-left, .nav-bar-right {
@@ -209,7 +231,7 @@ footer section i {
     }
     header ul li{
         list-style-type: none;
-        font-size: 12px;
+        font-size: 8px;
     }
     
     header ul li a{
@@ -270,6 +292,11 @@ footer section i {
     footer section i:hover {
         color: var(--green);
     }
+
+    .footer-cards {
+        width: 75%;
+        margin: 0 auto;
+    }
 }
 
 
@@ -309,4 +336,18 @@ footer section i {
         width: 20%;
     }
 
+    /* Footer */
+    .footer-cards {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    footer section {
+        width: 30%;
+        margin-bottom: 10px;
+        padding: 1.5em;
+        text-align: center;
+    }
 }
