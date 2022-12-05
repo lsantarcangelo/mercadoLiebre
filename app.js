@@ -4,10 +4,15 @@ const port = process.env.PORT || 3000;
 const path = require('path');
 const mainRoutes = require('./routes/mainRoutes.js');
 
-//recursos estaticos
+// Middlewares
 app.use(express.static('public'));
 
-//Rutas
+// Template Engine
+app.set('view engine', 'ejs');
+app.set('views', '/views');
+
+// Routes
 app.use('/', mainRoutes)
 
+// Server
 app.listen(port, console.log('Servidor corriendo en el puerto ' + port));
